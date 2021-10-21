@@ -4,59 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script> 
+    <script src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'></script>
+    <script src="index.js" defer></script>
+    <script defer src="./all.min.js"></script>
     <title>Oleg Sten</title>
 </head>
 <body>
     <header>
-        <div class="container">
-            <ul>
-                <li>My Tools</li>
-                <li>My Skills</li>
-                <li>My projects</li>
-                <li>My contacts</li>
-            </ul>
+        <div class="container header">
+          <ul class="langswitcher">
+            <li class="active"><a href="#ru" data-lang="ru">Ru</a></li>
+            <li class="deactive"><a href="#en" data-lang="en">En</a></li>
+          </ul>
+          <h1 lang="en">Hello. I'm Oleg Stenyaev</h1>
+          <h1 lang="ru">Привет, Я Олег Стеняев</h1>
+          <a class ="print-doc" href="javascript:(print());"> <img src="./img/print.png" alt="Print"></a>
+        </div>
+        <div class="contacts-head">
+          <p lang="en">Moscow</p>
+          <p lang="ru">Москва</p>
+          <p lang="en">Russia</p>
+          <p lang="ru">Россия</p>
+          <p>+7(909)934-4647</p>
+          <a href="mailto:malmeloon@gmail.com">malmeloon@gmail.com</a>
         </div>
     </header>
 
     <main>
-        <section>
-            <div class="container">
-                <h2>My Tools</h2>
-                <ul>
-                    <li>VSCode</li>
-                    <li>Figma</li>
-                    <li>Avocode</li>
-                    <li>Photoshop</li>
-                    <li>GitHub</li>
-                </ul>
-            </div>
+      <div class="block">
+        <section class="tools">
+          <h2 lang="en">My Tools</h2>
+          <h2 lang="ru">Мои инструменты</h2>
+          <div class="container-main">             
+              <ul>
+                  <li>VSCode</li>
+                  <li>Figma</li>
+                  <li>Avocode</li>
+                  <li>Photoshop</li>
+                  <li>GitHub</li>
+              </ul>
+          </div>
         </section>
-        <section>
-            <div class="container">
-                <h2>My Skills</h2>
-                <ul>
-                    <li>HTML, CSS</li>
-                    <li>JavaScript</li>
-                    <li>Vue</li>
-                    <li>React</li>
-                    <li>Lego builder</li>
-                </ul>
-            </div>
+        <section class="skills">
+          <h2 lang="en">My Skills</h2>
+          <h2 lang="ru">Мои навыки</h2>
+          <div class="container-main">
+              <ul>
+                  <li>HTML, CSS</li>
+                  <li>JavaScript</li>
+                  <li>Vue</li>
+                  <li>React</li>
+                  <li>Lego builder</li>
+              </ul>
+          </div>
         </section>
-        <section>
-            <div class="container">
-                <h2>My projects</h2>
-                <li>Mario Game</li>
-                <li>Shop</li>
-                <li>Task Book</li>
+      </div>
+        
+      <section class="project">
+        <h2 lang="en">My projects</h2>  
+        <h2 lang="ru">Мои проекты</h2>    
+          <div class="project-print">
+
+          </div>          
+          <div class="slidecontainer card container">
+            <div class="icons">
+              <div class="slide">
+                <img src="./img/rub.png">
+              </div>
+              
+              <div class="slide">
+                <img src="./img/rub.png">
+              </div>
+              
+              <div class="slide">
+                <img src="./img/rub.png">
+              </div>
+              
+              <div class="slide">
+                <img src="./img/rub.png">
+              </div>
+              
+              <div class="slide">
+                <img src="./img/rub.png">
+              </div>
+              
+              <div class="slide">
+                <img src="./img/rub.png">
+              </div>
+              
+              <div class="slide">
+                <img src="./img/rub.png">
+              </div>
             </div>
-        </section>
+        </div>
+      </section>
+
+      <section class="experience">
+        <h2 lang="en">My Experience</h2> 
+        <h2 lang="ru">Мой опыт</h2>          
+        <div class="slidecontainer card container">
+
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div>
-            <h2>My contacts</h2>
-        </div>
+        <h2 lang="en">My contacts</h2>
+        <h2 lang="ru">Мои контакты</h2>
+        <div class="container footer">
+          <div class="contacts">
+            <p lang="en">Moscow</p>
+            <p lang="ru">Москва</p>
+            <p lang="en">Russia</p>
+            <p lang="ru">Россия</p>
+            <p>+7(909)934-4647</p>
+            <a href="mailto:malmeloon@gmail.com">malmeloon@gmail.com</a>
+          </div>
+          <div class="content-social">
+            <a href="https://vk.com/malmeloon"><i class="fab fa-vk" aria-hidden="true"></i></a>
+            <a href="https://github.com/MarcusSten"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="https://t.me/MarusSten"><i class="fab fa-telegram" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/mwlite/in/marcus-braun-b6a1ba207"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          </div> 
+        </div> 
     </footer>
 </body>
 </html>
