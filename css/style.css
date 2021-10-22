@@ -74,6 +74,14 @@ h2 {
     box-sizing: border-box;
 }
 
+.container-main {
+    display: flex;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
 .container-main ul {
     list-style: none;
     padding: 20px 20px 20px 20px;
@@ -82,10 +90,10 @@ h2 {
 .container-main ul li::before {
     content: "\2022";
     font-weight: bold;
-    font-size: 30px;
     color: #e3e3e6;
     display: inline-block;
     width: 1em;
+    padding-right: 10px;
   }
 
 .header h1 {
@@ -292,6 +300,24 @@ a img {
 	box-sizing: border-box;
 }
 
+.exp {
+    padding: 20px;
+}
+
+.year {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.post {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 13px;
+}
+
 footer {
     margin-top: 20px;
     flex-shrink: 0;
@@ -333,6 +359,15 @@ footer {
     margin-right: 0;
 }
 
+.reserved {
+    font-size: 13px;
+}
+
+.reserved p {
+    text-align: center;
+    margin: 5px 0;
+}
+
 @media (min-width: 990px) {
     body {
         width: 800px;
@@ -361,7 +396,21 @@ footer {
     .container ul {
         display: flex;
         flex-direction: column;
-        margin-left: 35%;
+    }
+    .exp {
+        flex-direction: column;
+    }
+    .slide {
+        margin-top: 10px;
+    }
+    .footer {
+        flex-direction: column;
+        height: 200px;
+        align-items: center;
+        margin-bottom: 6px;
+    }
+    .contacts {
+        flex-direction: column;
     }
 }
 
@@ -380,6 +429,12 @@ footer {
         flex-direction: column;
         margin-left: 35%;
     }
+    .exp {
+        flex-direction: column;
+    }
+    .slide {
+        margin-top: 10px;
+    }
     .footer {
         flex-direction: column;
         height: 200px;
@@ -395,6 +450,9 @@ footer {
     /* здесь будут стили для печати */
     body {
         background: white;
+    }
+    .langswitcher {
+        display: none !important;
     }
     .contacts-head {
         display: flex;
