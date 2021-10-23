@@ -381,6 +381,13 @@ footer {
 	.slidecontainer {
 		max-width: 100%;
 	}
+    .footer {
+        flex-direction: column;
+        height: 200px;
+        align-items: center;
+        margin-bottom: 6px;
+        height: 90px;
+    }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -405,7 +412,7 @@ footer {
     }
     .footer {
         flex-direction: column;
-        height: 200px;
+        height: 150px;
         align-items: center;
         margin-bottom: 6px;
     }
@@ -418,6 +425,9 @@ footer {
     body {
         width: 98%;
     }
+    h1 {
+        text-align: center;
+    }
     .block {
         flex-direction: column;
     }
@@ -427,7 +437,6 @@ footer {
     .container ul {
         display: flex;
         flex-direction: column;
-        margin-left: 35%;
     }
     .exp {
         flex-direction: column;
@@ -437,7 +446,7 @@ footer {
     }
     .footer {
         flex-direction: column;
-        height: 200px;
+        height: 150px;
         align-items: center;
         margin-bottom: 6px;
     }
