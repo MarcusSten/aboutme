@@ -2,7 +2,7 @@ $(document).ready(function(){
 	$('.icons').slick({
 		//Basic settings
 		autoplay: true,
-		autoplaySpeed: 3000,
+		autoplaySpeed: 120000,
 		arrows: true,
 		swipeToSlide: true,
 		touchMove: true,
