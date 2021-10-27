@@ -59,7 +59,6 @@ a {
     color: #888888;
     font-family: helvetica;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
 h2 {
@@ -76,6 +75,7 @@ h2 {
 
 .container-main {
     display: flex;
+    justify-content: center;
     margin-top: 20px;
     border-radius: 15px;
     background-color: rgb(255, 255, 255);
@@ -84,25 +84,32 @@ h2 {
 
 .container-main ul {
     list-style: none;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
 }
 
-.container-main ul li::before {
-    content: "\2022";
-    font-weight: bold;
-    color: #e3e3e6;
-    display: inline-block;
-    width: 1em;
-    padding-right: 10px;
-  }
+.main-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-  .stars {
-    content: "\2022";
-    font-weight: bold;
-    color: #e3e3e6;
-    display: inline-block;
-    width: 1em;
-  }
+.progress-bar {
+    width: 100px;
+    height: 10px;
+    border: 1px solid #888888;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.progress-step {
+    margin-left: 2px;
+    background-color: #888888;
+    height: 6px;
+    border-radius: 10px;
+}
 
 .header h1 {
     display: flex;
@@ -162,7 +169,7 @@ a img {
 
 .slide {
 	margin: 0 10px;
-    width: 310px;
+    width: 350px;
     display: flex;
 }
 
@@ -175,17 +182,23 @@ a img {
     display: flex;
 }
 
+.block-card img {
+    border-radius: 10px;
+}
+
 .block-text {
-    width: 310px;
+    width: 350px;
     padding: 10px;
 }
 
 .block-text h3 {
     font-size: 17px;
     color: black;
+    text-transform: uppercase;
 }
 
 .block-text p {
+    margin-top: 10px;
     font-size: 13px;
 }
 
@@ -333,7 +346,6 @@ a img {
 
 .exp-block {
     margin: 0 10px;
-    width: 310px;
 }
 
 .year {
@@ -443,12 +455,10 @@ footer {
 
     .exp-block {
         margin: 0 auto;
+        text-align: center;
         margin-bottom: 10px;
     }
 
-    .slide {
-        margin-top: 10px;
-    }
     .footer {
         flex-direction: column;
         height: 150px;
@@ -480,6 +490,11 @@ footer {
     .exp {
         flex-direction: column;
     }
+    .exp-block {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
     .slide {
         margin-top: 10px;
     }
@@ -495,8 +510,12 @@ footer {
 }
 
 @media print {
-    /* здесь будут стили для печати */
+    /* Стили для печати */
+    * { -webkit-print-color-adjust: exact; }
+
     body {
+        width: 210mm;
+        height: 297mm;
         background: white;
     }
     .langswitcher {
@@ -513,6 +532,9 @@ footer {
     a {
         display: flex;
         align-items: flex-end;
+    }
+    .block {
+        flex-direction: row;
     }
     .slidecontainer {
         display: none;
@@ -531,5 +553,9 @@ footer {
     }
     .print-doc {
         display: none;
+    }
+    .experience {
+        margin: 0 auto;
+        width: 150mm;
     }
 }
