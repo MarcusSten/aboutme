@@ -35,6 +35,14 @@ main {
     flex: 1 0 auto;
 }
 
+.about {
+    display: none;
+}
+
+.about-text {
+    font-size: 15px;
+}
+
 .langswitcher {
     padding: 0 !important;
     margin: 10px;
@@ -62,6 +70,22 @@ a {
 }
 
 h2 {
+    text-align: center;
+}
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header div {
+    margin: 5px 0;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -112,10 +136,22 @@ h2 {
 }
 
 .header h1 {
+    text-align: center;
+    align-items: center;
     display: flex;
     font-size: 25px;
     margin: 0 auto;
     padding: 10px;
+}
+
+.header h2 {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 10px;
+    color: gray;
 }
 
 .project-print,
@@ -405,9 +441,6 @@ footer {
 
 .reserved {
     font-size: 13px;
-}
-
-.reserved p {
     text-align: center;
     margin: 5px 0;
 }
@@ -518,8 +551,16 @@ footer {
         height: 297mm;
         background: white;
     }
+    .about {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
     .langswitcher {
         display: none !important;
+    }
+    .header {
+        flex-direction: column;
     }
     .contacts-head {
         display: flex;

@@ -18,10 +18,13 @@
             <li class="active"><a href="#ru" data-lang="ru">Ru</a></li>
             <li class="deactive"><a href="#en" data-lang="en">En</a></li>
           </ul>
-          <h1 lang="en">Hello. I'm Oleg Stenyaev</h1>
-          <h1 lang="ru">Привет, Я Олег Стеняев</h1>
+          <div class="header-text">
+            <h1 lang="en">Hello. I'm Oleg Stenyaev</h1>
+            <h2 lang="en">Frontend developer</h2>
+            <h1 lang="ru">Привет, Я Олег Стеняев</h1>
+            <h2 lang="ru">Frontend разработчик</h2>
+          </div>
           <a class ="print-doc" href="javascript:(print());"> <img src="./img/print.png" alt="Print"></a>
-        </div>
         <div class="contacts-head">
           <p lang="en">Moscow</p>
           <p lang="ru">Москва</p>
@@ -31,6 +34,17 @@
           <a href="mailto:malmeloon@gmail.com">malmeloon@gmail.com</a>
         </div>
     </header>
+
+    <section class="about">
+      <h2 lang="en">About me</h2> 
+      <h2 lang="ru">Обо мне</h2>          
+      <div class="exp container">
+        <div class="exp-block">
+          <p lang="en" class="about-text">I am a novice Frontend developer. Every day I strengthen my knowledge of JavaScript, HTML, CSS on my pet projects and study new technologies and stacks of Vue, React, Git, Webpack, preprocessors, BEM, OOP and others. I have experience working in a team and managing a staff (3-5 people). If your company needs a decent and diligent employee without bad habits, ready to learn and with a twinkle in his eyes, then now you are reading about him.</p>
+          <p lang="ru" class="about-text">Я начинающий Frontend разработчик. Ежедневно укрепляю знания JavaScript, HTML, CSS на своих пет-проектах и изучаю новые технологии и стеки Vue, React, Git, Webpack, препроцессоры, БЭМ, ООП и другие. Имею опыт работы в коллективе и руководство штатом (3-5 человек). Если вышей компании нужен порядочный и усердный сотрудник без вредных привычек, готовый обучатся и с огоньком в глазах, то сейчас вы читаете о нем.</p>
+        </div>
+      </div>
+    </section>
 
     <main>
       <div class="block">
@@ -224,8 +238,9 @@
           </div>
         </div> 
         <div class="reserved">
-          <p lang="en">All rights reserved &copy; Oleg Stenyaev</p> 
-          <p lang="ru">Все права защищены &copy; Олег Стеняев</p>
+          <script>
+            document.write("Copyright &copy; "+ new Date().getFullYear()+ " Oleg Stenyaev. All rights reserved.");
+          </script>
         </div>
     </footer>
 </body>
