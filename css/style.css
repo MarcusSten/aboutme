@@ -175,6 +175,10 @@ a img {
     width: 30px;
 }
 
+.print-text {
+    display: none;
+}
+
 .slidecontainer {
 	position: relative;
 }
@@ -500,6 +504,7 @@ footer {
     }
     .contacts {
         flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -539,6 +544,7 @@ footer {
     }
     .contacts {
         flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -573,7 +579,14 @@ footer {
     a {
         display: flex;
         align-items: flex-end;
+        color: black;
     }
+    .print-text {
+        display: flex;
+    }
+    .container-main ul {
+        display: none;
+    } 
     .block {
         flex-direction: row;
     }
