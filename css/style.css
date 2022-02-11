@@ -593,8 +593,13 @@ footer {
     .slidecontainer {
         display: none;
     }
+    .slidecontainer {
+        display: none;
+    }
     .project-print {
         display: flex;
+        margin: 20px 0;
+        justify-content: center;
     }
     .content-social {
         display: none;
@@ -611,5 +616,8 @@ footer {
     .experience {
         margin: 0 auto;
         width: 150mm;
+    }
+    .reserved {
+        display: none;
     }
 }
