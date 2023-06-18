@@ -620,7 +620,7 @@ footer {
     .reserved {
         display: none;
     }
-    footer {
+    .footer-print-none {
 	display: none;
     }
 }
