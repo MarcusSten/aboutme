@@ -620,4 +620,7 @@ footer {
     .reserved {
         display: none;
     }
+    footer {
+	display: none;
+    }
 }
