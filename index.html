@@ -1,278 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script> 
-    <script src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'></script>
-    <script src="index.js" defer></script>
-    <script defer src="./all.min.js"></script>
-    <title>Oleg Sten</title>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Oleg Sten</title>
+
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/app.js" defer></script>
+
 </head>
 <body>
-    <header>
-        <div class="container header">
-          <ul class="langswitcher">
-            <li class="active"><a href="#ru" data-lang="ru">Ru</a></li>
-            <li class="deactive"><a href="#en" data-lang="en">En</a></li>
-          </ul>
-          <div class="header-text">
-            <h1 lang="en">Hello. I'm Oleg Steniaev</h1>
-            <h2 lang="en">Frontend developer</h2>
-            <h1 lang="ru">Привет, Я Олег Стеняев</h1>
-            <h2 lang="ru">Frontend разработчик</h2>
-          </div>
-          <a class ="print-doc" href="javascript:(print());"> <img src="./img/print.png" alt="Print"></a>
-        <div class="contacts-head">
-          <p lang="en">St. Petersburg</p>
-          <p lang="ru">Санкт Петербург</p>
-          <p lang="en">FL, US</p>
-          <p lang="ru">США</p>
-          <p>+1(727)420-9640</p>
-          <a href="mailto:malmeloon@gmail.com">malmeloon@gmail.com</a>
-        </div>
-    </header>
 
-    <section class="about">
-      <h2 lang="en">About me</h2> 
-      <h2 lang="ru">Обо мне</h2>          
-      <div class="exp container">
-        <div class="exp-block">
-          <p lang="en" class="about-text">I am Junior Frontend developer. Every day I strengthen my knowledge of JavaScript, HTML, CSS and study new technologies and stacks of Vue, React, TypeScript, Git, Webpack, preprocessors, BEM and others. I have experience working in a team and managing a staff (3-5 people). If your company needs a decent and diligent employee without bad habits, ready to learn and with a twinkle in his eyes, then now you are reading about him.</p>
-          <p lang="ru" class="about-text">Я начинающий Frontend разработчик. Ежедневно укрепляю знания JavaScript, HTML, CSS и изучаю новые технологии и стеки Vue, React, TypeScript, Git, Webpack, препроцессоры, БЭМ и другие. Имею опыт работы в коллективе и руководство штатом (3-5 человек). Если вышей компании нужен порядочный и усердный сотрудник без вредных привычек, готовый обучатся и с огоньком в глазах, то сейчас вы читаете о нем.</p>
-        </div>
-      </div>
-    </section>
+	<div class="wrapper">
+		<div class="content">
 
-    <main>
-      <div class="block">
-        <section class="tools">
-          <h2 lang="en">My Tools</h2>
-          <h2 lang="ru">Мои инструменты</h2>
-          <div class="container-main">
-              <div class="print-text">
-                <p>VSCode, Figma, Avocode, Photoshop, Git</p>
-              </div>             
-              <ul>
-                  <li class="main-list">VSCode
-                    <div class="progress-bar">
-                      <div class="progress-step" style="width: 40%;"></div>
-                    </div>
-                  </li>
-                  <li class="main-list">Figma
-                    <div class="progress-bar">
-                      <div class="progress-step" style="width: 25%;"></div>
-                    </div>
-                  </li>
-                  <li class="main-list">Avocode
-                    <div class="progress-bar">
-                      <div class="progress-step" style="width: 15%;"></div>
-                    </div>
-                  </li>
-                  <li class="main-list">Photoshop
-                    <div class="progress-bar">
-                      <div class="progress-step" style="width: 35%;"></div>
-                    </div>
-                  </li>
-                  <li class="main-list">Git, GitLab, GitHub
-                    <div class="progress-bar">
-                      <div class="progress-step" style="width: 50%;"></div>
-                    </div>
-                  </li>
-              </ul>
-          </div>
-        </section>
-        <section class="skills">
-          <h2 lang="en">My Skills</h2>
-          <h2 lang="ru">Мои навыки</h2>
-          <div class="container-main">
-              <div class="print-text">
-                <p>HTML, CSS, JavaScript, Vue, Lego builder</p>
-              </div> 
-              <ul>
-                  <li class="main-list">HTML, CSS
-                    <div class="progress-bar">
-                      <div class="progress-step" style="width: 70%;"></div>
-                    </div>
-                  </li>
-                  <li class="main-list">JavaScript
-                    <div class="progress-bar">
-                      <div class="progress-step" style="width: 25%;"></div>
-                    </div>
-                  </li>
-                  <li class="main-list">Vue
-                    <div class="progress-bar">
-                      <div class="progress-step" style="width: 35%;"></div>
-                    </div>
-                  </li>
-                  <li class="main-list">React
-                    <div class="progress-bar">
-                      <div class="progress-step" style="width: 10%;"></div>
-                    </div>
-                  </li>
-                  <li class="main-list">Lego builder
-                    <div class="progress-bar">
-                      <div class="progress-step" style="width: 95%;"></div>
-                    </div>
-                  </li>
-              </ul>
-          </div>
-        </section>
-      </div>
-        
-      <section class="project">
-        <h2 lang="en">My projects</h2>  
-        <h2 lang="ru">Мои проекты</h2>    
-          <div class="project-print">
-            <p>https://github.com/MarcusSten</p>
-          </div>          
-          <div class="slidecontainer card container">
-            <div class="icons">
+			<header class="hero-section">
+				<div class="container hero-logo">
+					<svg fill="#eee" height="150px" width="150px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 480 480" xml:space="preserve" stroke="#eee">
 
-              <div class="slide">
-                <a class="block-card" href="https://repair-shop.com.au" target="_blank">
-                  <img src="./img/project9.png">
-                  <div class="block-text">
-                    <h3>RepairShop</h3>
-                    <p>Vue, Webpack, GitLab, JavaScript, HTML, SCSS, adaptive</p>
-                  </div>
-                </a>
-              </div>
+						<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+						
+						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+						
+						<g id="SVGRepo_iconCarrier"> <g> <g> <g> <path d="M68.314,204.423c1.787,3.091,5.086,4.994,8.657,4.994h109.587c3.57,0,6.869-1.903,8.657-4.994l54.774-94.71 c1.792-3.097,1.792-6.916,0-10.013L195.214,4.994C193.427,1.903,190.127,0,186.557,0H76.971c-3.57,0-6.869,1.903-8.657,4.994 L13.543,99.7c-1.791,3.097-1.791,6.915,0,10.013L68.314,204.423z M82.739,20h98.05l48.991,84.707l-48.991,84.71h-98.05 l-48.987-84.71L82.739,20z"/> <path d="M466.456,234.994l-54.771-94.707c-1.787-3.09-5.086-4.994-8.656-4.994H293.441c-3.57,0-6.869,1.903-8.656,4.994 l-54.775,94.707c-1.792,3.097-1.792,6.915,0,10.013l54.775,94.707c1.787,3.09,5.086,4.994,8.656,4.994h109.588 c3.57,0,6.869-1.903,8.656-4.994l54.771-94.707C468.248,241.909,468.248,238.091,466.456,234.994z M397.261,324.707H299.21 L250.219,240l48.991-84.706h98.051L446.248,240L397.261,324.707z"/> <path d="M195.214,275.577c-1.788-3.09-5.087-4.994-8.657-4.994H76.971c-3.57,0-6.87,1.903-8.657,4.994l-54.771,94.71 c-1.791,3.097-1.791,6.915,0,10.013l54.771,94.706c1.788,3.09,5.087,4.994,8.657,4.994h109.587c3.57,0,6.869-1.903,8.657-4.994 l54.774-94.706c1.792-3.097,1.792-6.915,0-10.013L195.214,275.577z M180.789,460h-98.05l-48.987-84.706l48.987-84.711h98.05 l48.991,84.711L180.789,460z"/> <path d="M113.468,40.241c-4.779-2.766-10.897-1.136-13.665,3.644l-37.21,64.272c-2.767,4.779-1.136,10.897,3.644,13.665 c1.578,0.914,3.3,1.347,5.001,1.347c3.452,0,6.81-1.789,8.664-4.991l37.21-64.272C119.879,49.126,118.247,43.008,113.468,40.241z "/> <path d="M311.178,199.417c0,5.523,4.478,10,10,10h81.178c5.522,0,10-4.477,10-10s-4.478-10-10-10h-81.178 C315.655,189.417,311.178,193.894,311.178,199.417z"/> <path d="M149.399,426.704c-2.751,4.789-1.1,10.901,3.689,13.652c1.57,0.902,3.282,1.331,4.972,1.331 c3.463,0,6.831-1.801,8.68-5.02l30.442-52.985c2.751-4.789,1.1-10.901-3.689-13.652c-4.789-2.752-10.901-1.1-13.652,3.689 L149.399,426.704z"/> </g> </g> </g> </g>
+						
+					</svg>
+				</div>
+				<img data-speed=".6" class="hero" src="img/hero.png" alt="Alt" >
+				<div class="container">
+					<div data-speed=".75" class="main-header">
+						<h1 class="main-title">Oleg Sten <spa class="main-title-small">[ Frontend Developer ]</span></h1>
+					</div>
+				</div>
+			</header>
+		
+			<div class="portfolio">
+				<div class="container">
+					<main class="gallery">
+	
+						<div data-speed=".9" class="gallery__left">
+		
+							<a href="https://codepen.io/Marcus-Sten/pen/PoLqwEd" class="gallery__item" target="_blank"><img src="img/work/project1.png" alt="Alt">
+								<div class="text-block">
+									<h2 class="text-block__h">Game Noughts and Crosses</h2>
+									<p class="text-block__p">A simple game of Noughts and Crosses, created on the basis of VueJS</p>
+								</div>
+							</a>
 
-              <div class="slide">
-                <a class="block-card" href="https://partssearch.com.au/" target="_blank">
-                  <img src="./img/project10.png">
-                  <div class="block-text">
-                    <h3>PartsSearch</h3>
-                    <p>Vue, Webpack, GitLab, JavaScript, HTML, SCSS, adaptive</p>
-                  </div>
-                </a>
-              </div>
+							<a href="https://partssearch.com.au/" class="gallery__item" target="_blank"><img src="img/work/project9.png" alt="Alt">
+								<div class="text-block">
+									<h2 class="text-block__h">PartsSearch</h2>
+									<p class="text-block__p">Vue, Webpack, GitLab, JavaScript, HTML, SCSS, adaptive</p>
+								</div>
+							</a>
 
-              <div class="slide">
-                <a class="block-card" href="https://codepen.io/Marcus-Sten/pen/PoLqwEd" target="_blank">
-                  <img src="./img/project11.png">
-                  <div class="block-text">
-                    <h3>Naughts and Crosses</h3>
-                    <p>Vue, Webpack, JavaScript, HTML, CSS</p>
-                  </div>
-                </a>
-              </div>
+							<a href="https://marcussten.github.io/site5/index.html" class="gallery__item" target="_blank"><img src="img/work/project7.png" alt="Alt">
+								<div class="text-block">
+									<h2 class="text-block__h">Shop (Pet-project)</h2>
+									<p class="text-block__p">HTML, CSS, layout</p>
+								</div>
+							</a>
 
-              <div class="slide">
-                <a class="block-card" href="https://marcussten.github.io/MemoryCards/index.html" target="_blank">
-                  <img src="./img/project3.png">
-                  <div class="block-text">
-                    <h3>Memory Game</h3>
-                    <p>JavaScript, HTML, SCSS, DOM, adaptive</p>
-                  </div>
-                </a>
-              </div>
+							<a href="https://marcussten.github.io/site3/index.html" class="gallery__item" target="_blank"><img src="img/work/project3.png" alt="Alt">
+								<div class="text-block">
+									<h2 class="text-block__h">Mario Game (Pet-project)</h2>
+									<p class="text-block__p">JavaScript, OOP, Canvas</p>
+								</div>
+							</a>
+		
+						</div>
 
-              <div class="slide">
-                <a class="block-card" href="https://marcussten.github.io/site5/index.html" target="_blank">
-                  <img src="./img/project1.png">
-                  <div class="block-text">
-                    <h3>Shop</h3>
-                    <p>HTML, CSS, layout</p>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="slide">
-                <a class="block-card" href="https://marcussten.github.io/site7/index.html" target="_blank">
-                  <img src="./img/project2.png">
-                  <div class="block-text">
-                    <h3>Photobank</h3>
-                    <p>HTML, SaSS, BEM, adaptive, layout</p>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="slide">
-                <a class="block-card" href="https://marcussten.github.io/site3/index.html" target="_blank">
-                  <img src="./img/project5.png">
-                  <div class="block-text">
-                    <h3>Mario Game</h3>
-                    <p>JavaScript, OOP, Canvas</p>
-                  </div>
-                </a>
-              </div>
+						<div data-speed="1.1" class="gallery__right">
 
-              <div class="slide">
-                <a class="block-card" href="https://marcussten.github.io/Qbrick/" target="_blank">
-                  <img src="./img/project4.png">
-                  <div class="block-text">
-                    <h3>Lego Blocks</h3>
-                    <p>JavaScript, DOM, Under development</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-        </div>
-      </section>
+							<a href="https://repair-shop.com.au" class="gallery__item" target="_blank"><img src="img/work/project10.png" alt="Alt">
+								<div class="text-block">
+									<h2 class="text-block__h">RepairShop</h2>
+									<p class="text-block__p">Vue, Webpack, GitLab, JavaScript, HTML, SCSS, adaptive</p>
+								</div>
+							</a>
 
-      <section class="experience">
-        <h2 lang="en">My Experience</h2> 
-        <h2 lang="ru">Мой опыт</h2>          
-        <div class="exp container">
-          <div class="exp-block">
-            <p class="year">2021 - 2023</p>
-            <p lang="en" class="post">Junior developer, layout designer</p>
-            <p lang="en" class="text">Working for an Australian company. Layout, editing existing code and developing new functionality. Participated in the development of a new document parser service. Implemented the layout of two new sites for the company's clients. Created a new menu for tablet and mobile devices with the function of a long touch and display the loading status.</p>
-            <p lang="ru" class="post">Junior разработчик, верстальщик</p>
-            <p lang="ru" class="text">Работа в Австралийской компании. Верстка, правка существующего кода и разработка нового функционала. Принимал участие в разработке новго сервиса парсера документов. Реализовал верстку двух новых сайтов для клиентов компании. Создал новое меню для планшетных и мобильных устройств с функцией  долгого тача и отображения состояния загрузки.</p>
-          </div>
-          <div class="exp-block">
-            <p class="year">2021 - 2022</p>
-            <p lang="en" class="post">Student (frontend developer)</p>
-            <p lang="en" class="text">Student of GeekBrains online school</p>
-            <p lang="ru" class="post">Студент (frontend разработчик)</p>
-            <p lang="ru" class="text">Студент онлайн школы GeekBrains</p>
-          </div>
-          <div class="exp-block">
-            <p class="year">2019 - 2021</p>
-            <p lang="en" class="post">Purchasing manager (auto parts)</p>
-            <p lang="en" class="text">Implemented the ABCP platform with binding to the site and connection of suppliers via Api. Automated the processing of price lists and cross-lists.</p>
-            <p lang="ru" class="post">Менеджер отдела закупок (автозапчасти)</p>
-            <p lang="ru" class="text">Внедрил платформу ABCP с привязкой к сайту и подключением поставщиков по Api. Автоматизировал процесс обработки прайс и кросс листов.</p>
-          </div>
-          <div class="exp-block">
-            <p class="year">2011 - 2019</p>
-            <p lang="en" class="post">Head of Sales Department, Analyst (auto parts)</p>
-            <p lang="en" class="text">Managing the staff (3-5 people), Launching a new brand (auto parts) on the market. Organized a system for selecting analogues based on 1C. Managed the company's participation in exhibitions (MIMS, InterAuto).</p>
-            <p lang="ru" class="post">Начальник отдела продаж, аналитик (автозапчасти)</p>
-            <p lang="ru" class="text">Руководство штатом сотрудников (3-5 человек), вывод на рынок нового бренда. Организовал систему подбора аналогов на базе 1С. Руководил участием компании на выставках (MIMS, InterAuto).</p>
-          </div>
-        </div>
-      </section>
-    </main>
+							<a href="https://marcussten.github.io/MemoryCards/index.html" class="gallery__item" target="_blank"><img src="img/work/project8.png" alt="Alt">
+								<div class="text-block">
+									<h2 class="text-block__h">Memory Game (Pet-project)</h2>
+									<p class="text-block__p">JavaScript, HTML, SCSS, DOM, adaptive</p>
+								</div>
+							</a>
 
-    <footer class="footer-print-none">
-        <h2 lang="en">My contacts</h2>
-        <h2 lang="ru">Мои контакты</h2>
-        <div class="container footer">
-          <div class="contacts">
-            <p lang="en">St. Petersburg</p>
-            <p lang="ru">Санкт Петербург</p>
-            <p lang="en">FL, US</p>
-            <p lang="ru">США</p>
-            <p>+1(727)420-9640</p>
-            <a href="mailto:malmeloon@gmail.com">malmeloon@gmail.com</a>
-          </div>
-          <div class="content-social">
-            <a href="https://github.com/MarcusSten"><i class="fab fa-github" aria-hidden="true"></i></a>
-            <a href="https://t.me/MarusSten"><i class="fab fa-telegram" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/oleg-steniaev/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-          </div>
-        </div> 
-        <div class="reserved">
-          <script>
-            document.write("Copyright &copy; "+ new Date().getFullYear()+ " Oleg Steniaev. All rights reserved.");
-          </script>
-        </div>
-    </footer>
+							<a href="https://marcussten.github.io/site7/index.html" class="gallery__item" target="_blank"><img src="img/work/project6.png" alt="Alt">
+								<div class="text-block">
+									<h2 class="text-block__h">Photobank (Pet-project)</h2>
+									<p class="text-block__p">HTML, SaSS, BEM, adaptive, layout</p>
+								</div>
+							</a>
+		
+						</div>
+
+					</main>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
 </body>
 </html>
