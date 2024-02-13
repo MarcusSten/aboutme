@@ -48,3 +48,21 @@ if (ScrollTrigger.isTouch !== 1) {
 	})
 
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+	let links = document.querySelectorAll('a[href*="#"]');
+	links.forEach(function(link) {
+	  link.addEventListener('click', function(e) {
+		e.preventDefault();
+		let targetId = this.getAttribute('href').substring(1);
+		let targetElement = document.getElementById(targetId);
+		if (targetElement) {
+		  let targetOffset = targetElement.offsetTop;
+		  window.scrollTo({
+			top: targetOffset,
+			behavior: 'smooth'
+		  });
+		}
+	  });
+	});
+  });
